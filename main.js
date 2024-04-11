@@ -1,7 +1,7 @@
 const fs = require('fs')
 const readline = require('readline')
 
-const filePath = 'ImRobot.txt'
+const filePath = 'prc.txt' 
 let totalWords = 0
 
 const readStream = fs.createReadStream(filePath, { encoding: 'latin1' })
@@ -29,3 +29,4 @@ function stripAnsi(text) {
     const ansiRegex = /\x1B\[[0-?]*[ -/]*[@-~]/g
     return text.replace(ansiRegex, '')
 }
+
